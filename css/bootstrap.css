@@ -4446,9 +4446,9 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   display: block;
   float: right; /* rtl */
-  padding: 12px 20px 8px; /* rtl */
+  padding: 10px 20px 8px; /* rtl */
   margin-right: -20px; /* rtl */
-  font-size: 17px; /* rtl */
+  font-size: 15px; /* rtl */
   font-weight: normal; /* rtl */
   color: #777777;
   text-shadow: 0 1px 0 #ffffff;
