@@ -1,0 +1,61 @@
+//
+// Forms
+// --------------------------------------------------
+
+
+.radio,
+.checkbox {
+  padding-right: 20px;
+  padding-left: auto; //rtl added
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  float: right;
+  margin-right: -20px;
+  margin-left: auto; //rtl added
+}
+// Radios and checkboxes on same line
+.radio-inline,
+.checkbox-inline {
+  padding-right: 20px;
+  padding-left: auto; //rtl added
+}
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
+  margin-right: 10px; // space out consecutive inline controls
+  margin-left: auto; //rtl added
+}
+
+.form-inline {
+
+  // Kick in the inline
+  @media (min-width: @screen-sm) {
+    .radio,
+    .checkbox {
+      padding-right: 0;
+      padding-left: inherit;
+    }
+    .radio input[type="radio"],
+    .checkbox input[type="checkbox"] {
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+}
+
+
+// Horizontal forms
+//
+// Horizontal forms are built on grid classes and allow you to create forms with
+// labels on the left and inputs on the right.
+
+.form-horizontal {
+  // Only right align form labels here when the columns stop stacking
+  @media (min-width: @screen-sm-min) {
+    .control-label {
+      text-align: right;
+    }
+  }
+}

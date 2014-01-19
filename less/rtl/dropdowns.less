@@ -1,0 +1,28 @@
+//
+// Dropdown menus
+// --------------------------------------------------
+
+
+// Dropdown arrow/caret
+.caret {
+  margin-right: 2px;
+  margin-left: auto; //rtl added
+}
+
+// The dropdown menu (ul)
+.dropdown-menu {
+  right: 0;
+  left: auto; //rtl added
+  float: right;
+
+  // Aligns the dropdown menu to right
+  &.pull-left { //rtl added
+    left: 0;
+    right: auto;
+  }
+}
+// left aligned dropdowns
+.pull-left > .dropdown-menu { //rtl added
+  left: 0;
+  right: auto;
+}

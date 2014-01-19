@@ -1,0 +1,29 @@
+//
+// Tables
+// -------------------------
+th {
+  text-align: right;
+}
+@media (max-width: @screen-xs-max) {
+  .table-responsive {
+    > .table-bordered {
+      // Nuke the appropriate borders so that the parent can handle them
+      > thead,
+      > tbody,
+      > tfoot {
+        > tr {
+          > th:first-child,
+          > td:first-child {
+            border-right: 0;
+            border-right: inherit; //rtl added
+          }
+          > th:last-child,
+          > td:last-child {
+            border-left: 0;
+            border-right: inherit; //rtl added
+          }
+        }
+      }
+    }
+  }
+}

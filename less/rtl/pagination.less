@@ -1,0 +1,32 @@
+//
+// Pagination (multiple pages)
+// --------------------------------------------------
+.pagination {
+  padding-right: 0;
+  padding-left: auto; //rtl added
+
+  > li {
+    > a,
+    > span {
+      float: right; // Collapse white-space
+      margin-right: -1px;
+      margin-left: auto; //rtl added
+    }
+    &:first-child {
+      > a,
+      > span {
+        margin-right: 0;
+        margin-left: auto; //rtl added
+        .border-right-radius(@border-radius-base);
+        .border-left-radius(0);
+      }
+    }
+    &:last-child {
+      > a,
+      > span {
+        .border-left-radius(@border-radius-base);
+        .border-right-radius(0);
+      }
+    }
+  }
+}

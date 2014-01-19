@@ -1,0 +1,43 @@
+.nav {
+  padding-right: 0;
+  padding-left: auto; //rtl added
+}
+.nav-tabs {
+  > li {
+    float: right;
+    > a {
+      margin-left: 2px;
+      margin-right: auto; //rtl added
+    }
+  }
+}
+.nav-pills {
+  > li {
+    float: right;
+    + li {
+      margin-right: 2px;
+      margin-left: auto; //rtl added
+    }
+  }
+}
+.nav-stacked {
+  > li {
+    float: none;
+    + li {
+      margin-top: 2px;
+      margin-right: 0;
+      margin-left: auto; //rtl added
+    }
+  }
+}
+.nav-justified {
+  > .dropdown .dropdown-menu {
+    right: auto;
+  }
+}
+.nav-tabs-justified {
+  > li > a {
+    margin-left: 0;
+    margin-right: auto; //rtl added
+  }
+}
